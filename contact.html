@@ -14,9 +14,6 @@
 
 <body>
 
-	<!-- Textarea for Editor -->
-	<textarea id="editor">
-
 		<div class="fr-view" style="width: 100%; border: 1px solid #a08741;">
 			<!-- Banner -->
 			<div style="background: #22382C; padding: 10px; text-align: center;">
@@ -108,28 +105,7 @@
 		
 				<p><span style="color: rgb(214, 203, 186);">Also any copyright information</span></p>
 			</div></div>
-</textarea>
-
-	<!-- Froala Editor JS -->
-	<script src="https://cdn.jsdelivr.net/npm/froala-editor@4.0.15/js/froala_editor.pkgd.min.js"></script>
-
-	<script>
-		// Initialize Froala Editor
-		new FroalaEditor('#editor');
-
-		document.addEventListener("DOMContentLoaded", function () {
-			new FroalaEditor('#froala-editor', {
-				htmlAllowedTags: ['div', 'p', 'h1', 'h2', 'h3', 'span', 'strong', 'em', 'u', 'br'],
-				htmlAllowedAttrs: ['class', 'id', 'style'],
-				placeholderText: "Type here...",
-				toolbarButtons: ['bold', 'italic', 'underline', 'formatUL', 'align', 'color', 'fontFamily', 'fontSize', 'html'],
-				colorsText: ['#a08741', '#000000', '#ff0000', '#008000', '#0000ff'] // Add custom colors
-
-			});
-		});
-
-	</script>
-
+	
 </body>
 
 </html>
